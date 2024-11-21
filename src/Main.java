@@ -21,13 +21,16 @@ public class Main {
         System.out.println("Ingrese la direccion: ");
         direccion = sc.nextLine();
 
-
-        Persona persona1=new Persona(cedula, nombre, fechaNacimiento, tipoSangre, direccion);
-        persona1.imprimir();
-
+        Persona persona1= new Persona ("","","","","");
         persona1.cambiarDatos("1723589871", "Juan Mendez", "21/10/2000", "O+", "El Valle");
-        System.out.println("Nuevos Datos");
         persona1.imprimir();
+        System.out.println("Nuevos Datos");
+
+        persona1.cambiarDatos(cedula, nombre, fechaNacimiento, tipoSangre, direccion);
+        persona1.imprimir();
+
+
+
 
 
 
